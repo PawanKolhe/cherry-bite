@@ -1,0 +1,19 @@
+.Nav {
+  margin-bottom: 20px;
+}
+
+.Nav a {
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 6px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.Nav a.active {
+  text-decoration: underline;
+}
