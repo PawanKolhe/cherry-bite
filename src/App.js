@@ -12,7 +12,9 @@ import gift1 from './assets/images/gift1.svg';
 import gift2 from './assets/images/gift2.svg';
 import gift3 from './assets/images/gift3.svg';
 import christmasTree from './assets/images/christmas-tree.svg';
+
 import './App.scss';
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 import Home from './pages/Home/Home';
 import Search from './pages/Search/Search';

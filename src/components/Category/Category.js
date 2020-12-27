@@ -6,6 +6,7 @@ import './Category.scss';
 import { getRecipes } from '../../services/Recipes';
 
 import ScrollMenu from 'react-horizontal-scrolling-menu';
+import Loader from "react-loader-spinner";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -33,15 +34,24 @@ export const Category = ({ title, search }) => {
     <div className="Category">
       <h2 className="Category-title">{title}</h2>
       <div className="Category-recipies">
-        <ScrollMenu
-          alignCenter={false}
-          translate={0}
-          arrowLeft={ArrowLeft}
-          arrowRight={ArrowRight}
-          hideSingleArrow={true}
-          wheel={false}
-          data={recipes?.map(recipe => <RecipeCard key={recipe.id} recipe={recipe} />)}
-        />
+        {recipes.length ? 
+          <ScrollMenu
+            alignCenter={false}
+            translate={0}
+            arrowLeft={ArrowLeft}
+            arrowRight={ArrowRight}
+            hideSingleArrow={true}
+            wheel={false}
+            data={recipes?.map(recipe => <RecipeCard key={recipe.id} recipe={recipe} />)}
+          /> : 
+          <Loader
+            type="Rings"
+            color="#881215"
+            height={50}
+            width={50}
+            timeout={3000}
+          />
+        }
       </div>
     </div>
   )
