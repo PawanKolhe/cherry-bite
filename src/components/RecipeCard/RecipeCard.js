@@ -8,7 +8,7 @@ import { faArrowCircleRight, faBookmark, faTrash } from '@fortawesome/free-solid
 import { useAlert } from "react-alert";
 
 export const RecipeCard = ({ recipe, alternateStyle, disableSaveButton, recipeDeleted }) => {
-  const { id, title, image, sourceUrl: url, readyInMinutes, servings } = recipe;
+  const { id, title, image, readyInMinutes, servings } = recipe;
   const alert = useAlert();
 
   const saveRecipe = () => {

@@ -1,7 +1,7 @@
 import './VideoCard.scss';
 
 export const VideoCard = ({ video }) => {
-  const { title, thumbnail, youTubeId, views, length } = video;
+  const { title, youTubeId, views, length } = video;
 
   return (
     <div className="VideoCard">
