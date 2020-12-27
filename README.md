@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+<p><img src="https://i.ibb.co/6FMfswC/Cherry-Bite-Logo.png" alt="logo" width="400" /></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Cherry Bite
+Find some delicious holiday Recipes and get cooking! Search recipes, save the recipes you like, search for recipe videos, and view a random recipe if you feel lucky.
 
-## Available Scripts
+![Banner](https://i.ibb.co/4KQy0r1/Cherry-Bite-Holiday-Recipes.png)
 
-In the project directory, you can run:
+## ⭐ Inspiration
+During the Holidays, having good food is essential. So I decided to create a web app where one can discover new recipes.
 
-### `yarn start`
+## 🚀 What it does
+- On the 'Home' page, the web app displays recipes from different categories, including 'Holiday Special' recipes.
+- On the 'Search' page, one can search for recipes using keywords.
+- On the 'Videos' page, user can search for recipe related videos and start watching.
+- On the 'Random' page, user can discover a random recipe from the web. Similar to Google's 'I'm Feeling Lucky' button.
+- The 'Saved' page contains recipes the user has saved while browsing through recipes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If a user likes a particular recipe, they can click the save button which stores the recipe in the database. They can view their saved recipes on the 'Saved' page. User can open up the recipe and look at the recipe details which contains details like health score, time to prepare, summary, ingredients, steps to prepare the recipe, as well as other related recipes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+At the footer of the page, a random food joke is generated each time you refresh the web app.
 
-### `yarn test`
+## ⛏ How I built it
+- I've use React to build the frontend.
+- I've used [Strapi](https://strapi.io/) to build the backend quickly for storing recipes that the user saves.
+- I used the [Spoonacular API](https://spoonacular.com/food-api) to retrieve data about recipes.
+- The web app was deployed on Google App Engine (GCP).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🤨 Challenges I ran into
+- Implementing a horizontal scroll for recipe categories was something I was initially struggling with.
+- I ran into challenges with deploying to Google Cloud Platform.
 
-### `yarn build`
+## 😃 Accomplishments that I'm proud of
+I'm proud that I got a working app with a backend and good Holiday theme user interface created within 2 days.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📚 What I learned
+I used React after a long time, so it was fun to recall what I had forgotten and learn new concepts in React such as Hooks. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💡 What's next for Cherry Bite
+User SignUp and Login was a feature I didn't have enough time to build. I could integrate many other features that the API provides such as a chat bot for having a conversation about recipes, its ingredients and how to cook it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Environment Setup
 
-### `yarn eject`
+Install dependencies
+```bash
+yarn
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Launch dev server
+```bash
+yarn start
+```
