@@ -1,11 +1,9 @@
 .Category-title {
   text-align: left;
+  color: #333;
 }
 
 .Category-recipies {
-  // display: flex;
-  // flex-direction: row;
-  // overflow-x: auto;
   position: relative;
 }
 
@@ -24,6 +22,8 @@
   position: absolute;
   padding: 10px;
   z-index: 100;
+  box-sizing: content-box;
+  cursor: pointer;
 }
 .arrow-prev svg {
   left: 0;

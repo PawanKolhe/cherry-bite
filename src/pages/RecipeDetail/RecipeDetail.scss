@@ -1,0 +1,145 @@
+.Recipe-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0 80px;
+}
+
+.recipe-section-title {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #881215;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.Recipe-full-image-container {
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.Recipe-full-image {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Recipe-tags {
+  text-align: center;
+}
+
+.Recipe-highlights {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  grid-gap: 1rem;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.Recipe-highlight {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.Recipe-summary {
+  padding: 25px;
+  background-color: #F9F3F3;
+  color: #444;
+  border-radius: 3px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.Recipe-ingredients-container {
+  text-align: left;
+}
+
+.Recipe-ingredients-servings {
+  font-size: 1.2rem;
+}
+
+.Recipe-ingredients {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.Recipe-ingredient {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px 10px;
+}
+
+.Recipe-ingredient-amount {
+  font-size: 0.9rem;
+}
+
+.Recipe-ingredient-name {
+  font-weight: 500;
+}
+
+.Recipe-ingredient-image-container {
+  height: 70px;
+  width: 90px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.Recipe-ingredient-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.Recipe-instructions {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.Recipe-instruction {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.Recipe-instruction-number {
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #881215;
+  color: white;
+  font-weight: 500;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.Recipe-instruction-step {
+  text-align: left;
+}
+
+.Recipe-related-recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .Recipe-title {
+    padding: 0 20px;
+  }
+}

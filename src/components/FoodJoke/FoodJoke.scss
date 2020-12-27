@@ -1,0 +1,17 @@
+.FoodJoke {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #005F2D;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  padding: 0 100px;
+  line-height: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .FoodJoke {
+    padding: 0 30px;
+  }
+}
