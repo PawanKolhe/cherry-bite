@@ -49,3 +49,6 @@ Launch dev server
 ```bash
 yarn start
 ```
+
+## 🛠 Backend Repo
+https://github.com/PawanKolhe/cherry-bite-backend
